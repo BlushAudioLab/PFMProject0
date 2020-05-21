@@ -8,6 +8,16 @@
   ==============================================================================
 */
 
+/*
+ TO DO 21/05/2020:
+ 1. click anywhere on the window and play a note
+ 2. if you click and drag it will change the pitch of the note
+ 
+ 
+ */
+
+
+
 #pragma once
 
 #include <JuceHeader.h>

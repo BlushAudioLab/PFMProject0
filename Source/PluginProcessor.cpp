@@ -189,3 +189,8 @@ AudioProcessor* JUCE_CALLTYPE createPluginFilter()
 {
     return new Pfmproject0AudioProcessor();
 }
+ 
+/*
+This is a multi-line comment. Use one of these if you have lots of stuff to say.
+Only if you’re going to use multiple lines and stuff like introducing a section of code.
+*/
