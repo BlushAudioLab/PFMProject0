@@ -12,6 +12,7 @@
  TO DO 21/05/2020:
  1. click anywhere on the window and play a note
  2. if you click and drag it will change the pitch of the note
+ 3. Should we play a sound?
  
  
  */
@@ -40,7 +41,7 @@ public:
     bool isBusesLayoutSupported (const BusesLayout& layouts) const override;
    #endif
 
-    void processBlock (AudioBuffer<float>&, MidiBuffer&) override;
+    void processBlock (AudioBuffer<float>&, MidiBuffer&) override; //Most important function is declared here. It returns nothing and it accepts an Audio Buffer and a MIDI Buffer. These are the two parameters.
 
     //==============================================================================
     AudioProcessorEditor* createEditor() override;
@@ -66,6 +67,6 @@ public:
     void setStateInformation (const void* data, int sizeInBytes) override;
 
 private:
-    //==============================================================================
+    bool shouldPlaySound = true; //==============================================================================
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (Pfmproject0AudioProcessor)
 };
